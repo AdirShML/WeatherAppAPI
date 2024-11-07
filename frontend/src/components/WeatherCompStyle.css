@@ -6,41 +6,41 @@
 }
 
 .weather-comp.light {
-  background-color: #f9f9f9; /* Light background for light mode */
-  color: #222; /* Dark text for light mode */
+  background-color: #f9f9f9; 
+  color: #222; 
 }
 
 .weather-comp.dark {
-  background-color: #2e2e2e; /* Dark gray background for dark mode */
-  color: #f0f0f0; /* Light text for better contrast in dark mode */
+  background-color: #2e2e2e; 
+  color: #f0f0f0; 
 }
 
-/* Container for the weather display, ensuring it's responsive */
+
 .weather-container {
   display: flex;
-  flex-direction: row;            /* Cards displayed horizontally */
-  flex-wrap: wrap;                /* Allow cards to wrap when needed */
-  gap: 15px;                      /* Space between cards */
-  justify-content: center;        /* Center the cards */
+  flex-direction: row;            
+  flex-wrap: wrap;                
+  gap: 15px;                      
+  justify-content: center;        
   margin-top: 20px;
   padding: 10px;
   width: 100%;
 }
 
-/* Adjusting card styling */
+
 .weather-card {
   background-color: #ffffff;
   color: #333;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;                  /* Set a fixed width for each card */
+  width: 250px;                  
   padding: 1px;
   text-align: left;
   transition: transform 0.3s ease;
 }
 
 .weather-card:hover {
-  transform: scale(1.05);        /* Slight zoom effect on hover */
+  transform: scale(1.05);        
 }
 
 .weather-card p {
@@ -48,7 +48,7 @@
   font-size: 14px;
 }
 
-/* Light mode styling */
+
 .weather-card.light {
   background-color: #ffffff;
   color: #333;
@@ -59,7 +59,7 @@
   color: #e0e0e0;
 }
 
-/* Button Styling */
+
 button.light {
   color: #fff;
   background-color: #007BFF; /* Blue button for light mode */
@@ -77,36 +77,35 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Media Queries */
 
 /* Mobile view: stack cards vertically */
 @media (max-width: 768px) {
   .weather-container {
-    flex-direction: column;    /* Stack cards vertically */
-    align-items: center;       /* Center cards */
+    flex-direction: column;    
+    align-items: center;       
   }
 
   .weather-card {
-    width: 90%;                 /* Cards take up most of the screen width */
+    width: 90%;                 
   }
 }
 
 /* Tablet view (2 cards per row) */
 @media (max-width: 1024px) {
   .weather-container {
-    flex-direction: row;       /* Keep cards horizontally aligned */
-    justify-content: space-evenly; /* Even space between cards */
+    flex-direction: row;       
+    justify-content: space-evenly; 
   }
 
   .weather-card {
-    width: 45%;                 /* Each card takes up 45% of the container width */
+    width: 45%;                
   }
 }
 
 /* Large screen view: Keep horizontal layout */
 @media (min-width: 1025px) {
   .weather-container {
-    flex-direction: row;       /* Horizontal layout for large screens */
-    justify-content: space-evenly; /* Even space between cards */
+    flex-direction: row;       
+    justify-content: space-evenly; 
   }
 }

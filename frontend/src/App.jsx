@@ -30,7 +30,7 @@ function App() {
         <footer className={`footer ${darkMode ? 'dark' : 'light'}`}>
           <p>Created by Adir</p>
           <p>Email: adirshmuel9@gmail.com</p>
-          <p>Github Repo <a href="https://github.com/AdirShML" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          <p>Github Profile <a href="https://github.com/AdirShML" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           <p>Linkedin <a href="https://www.linkedin.com/in/adir-shmuel9" target="_blank" rel="noopener noreferrer">Linkedin  Profile</a></p>
 
         </footer>

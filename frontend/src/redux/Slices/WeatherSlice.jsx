@@ -5,13 +5,13 @@ import { hostName } from "../../utilities/api";
 export const ForecastData = createAsyncThunk('weather/fetchForecastData', async (query_data, { rejectWithValue }) => {
   try {
     
-    // Send a POST request with both the city and choosen_option in the request body
+    
     const payload = { weather_type: 'forecast', ...query_data }
     const response = await axios.post(`${hostName}/weather/`, { payload });
 
-    return response.data; // Fulfilled payload
+    return response.data; 
   } catch (error) {
-    return rejectWithValue(error.response?.data?.message || 'Failed to fetch data'); // Rejected payload
+    return rejectWithValue(error.response?.data?.message || 'Failed to fetch data'); 
   }
 });
 const WeatherSlice = createSlice({

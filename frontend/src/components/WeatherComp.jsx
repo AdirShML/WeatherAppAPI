@@ -8,7 +8,7 @@ export const WeatherComp = ({darkMode}) => {
     const { options, selectedOption, data, loading, error } = useSelector((state) => state.weather);
     const { selectedChoice, city, latitude, longitude } = useSelector((state) => state.userInput);
 
-    // Handle the change of the selection in the dropdown
+   
     const handleSelectionChange = (e) => {
         dispatch(setSelectedOption(e.target.value));
     };

@@ -2,16 +2,16 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { hostName } from "../../utilities/api";
 
-// Async thunk to fetch data based on user choice
+
 export const getInputData = createAsyncThunk('weather/getInputData', async (query_data, { rejectWithValue }) => {
   try {
 
     const payload = { weather_type: 'weather', ...query_data }
     const response = await axios.post(`${hostName}/weather/`, { payload });
-    return response.data; // Fulfilled payload
+    return response.data; 
 
   } catch (error) {
-    return rejectWithValue(error.response?.data?.message || 'Failed to fetch data'); // Rejected payload
+    return rejectWithValue(error.response?.data?.message || 'Failed to fetch data'); 
   }
 });
 
@@ -30,8 +30,8 @@ const InputSlice = createSlice({
   reducers: {
     setSelectedChoice: (state, action) => {
       state.selectedChoice = action.payload;
-      state.data = null; // Reset data on new selection
-      state.error = null; // Reset error on new selection
+      state.data = null; 
+      state.error = null; 
     },
     setCity: (state, action) => {
       state.city = action.payload;

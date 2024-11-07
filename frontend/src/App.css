@@ -13,14 +13,14 @@
   color: black;
 }
 
-/* Input container */
+
 .input-container {
   margin: 50px auto;
   width: 60%;
   max-width: 500px;
 }
 
-/* Weather container */
+
 .weather-container {
   margin: 10px auto;
   padding: 1px;
@@ -33,14 +33,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading style */
+
 h1 {
   margin-bottom: 20px;
   color: #333;
 }
 
 .App.dark h1 {
-  color: #00ff00; /* Green color for the title in dark mode */
+  color: #00ff00; 
 }
 
 /* Mobile responsiveness */
@@ -50,35 +50,35 @@ h1 {
   }
 
   .input-container {
-    width: 90%; /* Make input container take more width on mobile */
+    width: 90%; 
     margin: 20px auto;
   }
 
   .weather-container {
-    width: 90%; /* Weather container takes more width on mobile */
+    width: 90%; 
     padding: 15px;
   }
 
   h1 {
-    font-size: 20px; /* Smaller title size on mobile */
+    font-size: 20px; 
     margin-bottom: 10px;
   }
 
-  /* Adjust button and input fields for mobile */
+  
   select, input, button {
-    width: 100%; /* Full width for input fields and buttons */
+    width: 100%; 
     padding: 12px;
-    font-size: 16px; /* Larger text for easier readability */
+    font-size: 16px; 
     margin-bottom: 10px;
   }
 
   .weather-container {
-    padding: 10px; /* Reduced padding for mobile */
+    padding: 10px; 
   }
 
-  /* Adjust the weather cards for mobile */
+  
   .weather-card {
-    width: 100%; /* Full width for each card on mobile */
+    width: 100%; 
     margin-bottom: 15px;
   }
 }
@@ -86,21 +86,21 @@ h1 {
 /* Large screen responsiveness */
 @media (min-width: 769px) {
   .input-container {
-    width: 60%; /* Maintain 60% width for larger screens */
+    width: 60%; 
   }
 
   .weather-container {
-    width: 80%; /* Maintain 80% width for weather container */
+    width: 80%; 
     max-width: 800px;
   }
 
   h1 {
-    font-size: 28px; /* Larger title for large screens */
+    font-size: 28px; 
   }
 
-  /* Keep weather cards side by side */
+  
   .weather-card {
-    width: 45%; /* 45% width for weather cards */
+    width: 45%; 
     margin-bottom: 20px;
   }
 
@@ -109,7 +109,7 @@ h1 {
     padding: 20px;
     font-size: 14px;
     border-top: 1px solid #ccc;
-    margin-top: 30px; /* Space between the weather container and footer */
+    margin-top: 30px; 
   }
   
   .footer a {
@@ -123,12 +123,12 @@ h1 {
   
   /* Light and Dark Mode Footer Styling */
   .footer.light {
-    background-color: #f8f9fa;  /* Light background for light mode */
+    background-color: #f8f9fa;  
     color: #333;
   }
   
   .footer.dark {
-    background-color: #333;  /* Dark background for dark mode */
+    background-color: #333;  
     color: #f8f9fa;
   }
 }

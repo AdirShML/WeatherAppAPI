@@ -1,5 +1,5 @@
 from django.conf import settings
-from .utils import WeatherUtils  # Import the utility class
+from .utils import WeatherUtils  
 
 class WeatherCacheService:
     API_KEY = settings.API_KEY
