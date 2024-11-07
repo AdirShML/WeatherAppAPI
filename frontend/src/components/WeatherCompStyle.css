@@ -1,0 +1,112 @@
+.weather-comp {
+  text-align: center;
+  margin: 1px;
+  padding: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.weather-comp.light {
+  background-color: #f9f9f9; /* Light background for light mode */
+  color: #222; /* Dark text for light mode */
+}
+
+.weather-comp.dark {
+  background-color: #2e2e2e; /* Dark gray background for dark mode */
+  color: #f0f0f0; /* Light text for better contrast in dark mode */
+}
+
+/* Container for the weather display, ensuring it's responsive */
+.weather-container {
+  display: flex;
+  flex-direction: row;            /* Cards displayed horizontally */
+  flex-wrap: wrap;                /* Allow cards to wrap when needed */
+  gap: 15px;                      /* Space between cards */
+  justify-content: center;        /* Center the cards */
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Adjusting card styling */
+.weather-card {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;                  /* Set a fixed width for each card */
+  padding: 1px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);        /* Slight zoom effect on hover */
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Light mode styling */
+.weather-card.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.weather-card.dark {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
+/* Button Styling */
+button.light {
+  color: #fff;
+  background-color: #007BFF; /* Blue button for light mode */
+  transition: background-color 0.3s ease;
+}
+
+button.dark {
+  color: #fff;
+  background-color: #4a90e2; /* Muted blue for dark mode */
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Media Queries */
+
+/* Mobile view: stack cards vertically */
+@media (max-width: 768px) {
+  .weather-container {
+    flex-direction: column;    /* Stack cards vertically */
+    align-items: center;       /* Center cards */
+  }
+
+  .weather-card {
+    width: 90%;                 /* Cards take up most of the screen width */
+  }
+}
+
+/* Tablet view (2 cards per row) */
+@media (max-width: 1024px) {
+  .weather-container {
+    flex-direction: row;       /* Keep cards horizontally aligned */
+    justify-content: space-evenly; /* Even space between cards */
+  }
+
+  .weather-card {
+    width: 45%;                 /* Each card takes up 45% of the container width */
+  }
+}
+
+/* Large screen view: Keep horizontal layout */
+@media (min-width: 1025px) {
+  .weather-container {
+    flex-direction: row;       /* Horizontal layout for large screens */
+    justify-content: space-evenly; /* Even space between cards */
+  }
+}

@@ -1,0 +1,35 @@
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* Default light mode background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 60%;
+  max-width: 500px;
+  margin: 20px auto;
+  color: #333; /* Default light mode text color */
+}
+
+.weather-card.dark {
+  background-color: #444; /* Dark mode background */
+  color: #f0f0f0; /* Dark mode text color */
+}
+
+.weather-card h3 {
+  color: #007BFF; /* Default light mode color */
+  margin-bottom: 15px;
+}
+
+.weather-card.dark h3 {
+  color: #00ff00; /* Green color for dark mode */
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.weather-card.dark p {
+  color: #f0f0f0; /* Light text color for dark mode */
+}

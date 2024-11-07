@@ -1,0 +1,5 @@
+venv/
+
+weatherapi/.env
+
+frontend/node_modules
